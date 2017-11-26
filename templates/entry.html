@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block body %}
+<h2>{{ the_title }}</h2>
+
+	<form method='POST' action='/entry'>
+		<table>
+			<p>What game did you play?</p>
+			<input type="radio" name="game" value="overwatch" checked>Overwatch<br>
+			<input type="radio" name="game" value="rocket league">Rocket League<br>
+			<tr><td>Result(w) or (l):</td><td><input name='Result' type='TEXT' width='50'></td></tr>
+			<tr><td>Gold:</td><td><input name='Gold' type='TEXT' width='50'></td></tr>
+			<tr><td>Silver:</td><td><input name='Silver' type='TEXT' width='50'></td></tr>
+			<tr><td>Bronze:</td><td><input name='Bronze' type='TEXT' width='50'></td></tr>
+			<tr><td>Kills:</td><td><input name='Kills' type='TEXT' width='50'></td></tr>
+			<tr><td>Deaths:</td><td><input name='Deaths' type='TEXT' width='50'></td></tr>
+			<tr><td>Healing:</td><td><input name='Healing' type='TEXT' width='50'></td></tr>
+		</table>
+			<p>When you're ready, click this button:</p>
+			<p><input value='Submit' type='SUBMIT'></p>
+		</form>
+{% endblock %}
